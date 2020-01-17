@@ -1,5 +1,4 @@
-# CardkillerGame
-All files to my cardkiller game!
+# Cardkiller The Game
 
 In this game you have 3 types of cards:
 Potions (Will heal your health with the ammount that's on the card with a max of your max health).
