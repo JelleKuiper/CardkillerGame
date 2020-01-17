@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="CardKillerInfinite.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="top" id="top">
+    <h1 class="black2white">CardKiller <span class="vColor white2black">Infinite</span></h1>
+    <h3>How much coins can you earn before dying?</h3>
+    <button onclick="window.location.href='../Menu/Menu.html'" class="btn navBtn">Back to the Menu</button>
+  </div>
+
+  <!-- Playing field -->
+  <div class="speelveld" id="speelveld"></div>
+
+  <!-- Stats, gamebuttons and other -->
+  <div class="contain">
+    <div class="stats" id="stats"></div>
+    <button onclick="pakVanStapel();" class="btn gameBtn gameBtnExtra" id="pakVanStapelKnop">
+      Pak meer kaarten<span class="pakTekst" id="pakTekst"></span></button>
+    <button onclick="reset();" class="btn gameBtn gameBtnExtra">Reset</button>
+  </div>
+</body>
+
+<!-- All js scriptfiles here -->
+<script src="CardKillerInfinite.js"></script>
+
+</html>

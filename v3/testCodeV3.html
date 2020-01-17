@@ -1,0 +1,109 @@
+<html>
+<head>
+
+</head>
+<body>
+  <div class="divContainer" id="divContainer"></div>
+  <button onclick="shuffleDivs();">Shuffle divs</button>
+</body>
+<style>
+  .divContainer{
+    display: inline-block;
+    border: 1px solid black;
+    width: 380px;
+    height: 530px;
+  }
+
+  .beker{
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid black;
+    width: 100px;
+    height: 150px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  button{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .potion{
+    background-color: red;
+  }
+
+  .monster{
+    background-color: purple;
+  }
+</style>
+<script>
+  var divs = 9;
+  var divCon = document.getElementById("divContainer");
+  var allDivs;
+  var bekers = [];
+
+  createBekers(9);
+
+  function Beker(id, value, category){
+    this.id = id;
+    this.value = value;
+    this.category = category;
+  }
+
+  function random(){
+    var rand = parseInt(Math.ceil(Math.random() * 9));
+    return rand;
+  }
+
+  function createBekers(aantalBekers){
+    for (var i = 0; i < aantalBekers; i++) {
+      bekers.push(new Beker(i,random()));
+    }
+
+    for (var i = 0; i < aantalBekers; i++) {
+      var div = document.createElement("div");
+
+      div.classList.add("beker");
+
+      div.setAttribute("id", "beker" + i);
+
+      divContainer.appendChild(div);
+      // document.getElementById("beker" + (i + 1)).innerHTML = bekers[i].id +
+      // "<br>Bekerinhoud: " + bekers[i].inhoud + "cl";
+    }
+
+    allDivs = document.getElementsByClassName("beker");
+
+    for (var i = 0; i < aantalBekers; i++) {
+        var currentBeker = document.getElementById("beker" + i);
+        var potMon = potionOrMonster();
+
+        currentBeker.classList.add(potMon);
+
+        currentBeker.dataset.value = random();
+        currentBeker.dataset.category = potMon;
+
+        currentBeker.innerHTML = allDivs[i].id + "<br>Value: " +
+        allDivs[i].dataset.value + "<br>" + allDivs[i].dataset.category;
+    }
+  }
+
+  function shuffleDivs(){
+    var frag = document.createDocumentFragment();
+    while(divCon.children.length){
+      frag.appendChild(divCon.children[Math.floor(Math.random() * divCon.children.length)]);
+    }
+    divCon.appendChild(frag);
+  }
+
+  function potionOrMonster(){
+    var rand = parseInt(Math.ceil(Math.random() * 2));
+    if (rand == 1){
+      return "potion";
+    }else{
+      return "monster";
+    }
+  }
+</script>
+</html>

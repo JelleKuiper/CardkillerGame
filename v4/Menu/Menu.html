@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="Menu.css">
+</head>
+
+<body>
+  <div class="container big">
+    <h1 class="title"><span class="black2white">Card Killer</span></h1>
+    <h2 class="minus-margin"><span class="white2black">The Game</span></h2>
+
+    <div class="container medium">
+      <div class="container nav middle">
+        <button onclick="showVersions();" class="btn versionBtn" id="versionBtn">Old versions</button>
+        <button onclick="window.location.href='../../v1/Index.html'" class="btn navBtn displayNone">V1</button>
+        <button onclick="window.location.href='../../v2/IndexV2.html'" class="btn navBtn displayNone">V2</button>
+        <button onclick="window.location.href='../../v3/IndexV3.html'" class="btn navBtn displayNone">V3</button>
+      </div>
+
+      <div class="container small left">
+        <button class="btn goToBtn" id="card9btn" onclick="getCardNumber(this)" data-value="9">9 Cards</button>
+        <button class="btn goToBtn" id="card18btn" onclick="getCardNumber(this)" data-value="18">18 Cards</button>
+        <button class="btn goToBtn" id="card27btn" onclick="getCardNumber(this)" data-value="27">27 Cards</button>
+        <button class="btn goToBtn" id="card36btn" onclick="getCardNumber(this)" data-value="36">36 Cards</button>
+      </div>
+
+      <div class="container small right">
+        <p class="margin-plus txtStyling">Choose a number of cards to play with</p>
+        <input type="range" min="1" max="100" value="50" class="slider" id="slider">
+        <button class="btn goToBtn" onclick="getCardNumberFromSlider(this)"><span id="sliderOutput"></span><span id="cardsTxt"></span></button>
+      </div>
+
+      <div class="container nav middle">
+        <button onclick="goToGame();" class="btn goToBtn botDiv">Play with <span id="cardNumber">...</span><span id="cardsTxt2"></span></button>
+        <button onclick="goToInfiniteGame();" class="btn goToBtn botDiv" id="infiniteBtn">Play infinite mode</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="Menu.js"></script>
+
+</html>

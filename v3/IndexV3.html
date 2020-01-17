@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="CardCssV3.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="top" id="top">
+    <h1>Cardkiller <span class="vColor">V3</span></h1>
+    <h3>Kan jij alle kaarten wegspelen zonder dood te gaan?</h3>
+    <button onclick="window.location.href='../v1/Index.html'" class="btn navBtn versionBtn">V1</button>
+    <button onclick="window.location.href='../v2/IndexV2.html'" class="btn navBtn versionBtn">V2</button>
+    <button onclick="window.location.href='../v3/IndexV3.html'" class="btn navBtn versionBtn">V3</button>
+    <button onclick="window.location.href='../v4/Menu/Menu.html'" class="btn navBtn versionBtn">Menu</button>
+  </div>
+
+  <!-- Playing field -->
+  <div class="speelveld" id="speelveld"></div>
+
+  <!-- Stats, gamebuttons and other -->
+  <div class="contain">
+    <div class="stats" id="stats"></div>
+    <button onclick="pakVanStapel();" class="btn gameBtn gameBtnExtra" id="pakVanStapelKnop">Pak van de stapel</button>
+    <button onclick="kaartenAantalPrompt();" class="btn gameBtn gameBtnExtra">Kies aantal kaarten</button>
+    <button onclick="reset();" class="btn gameBtn gameBtnExtra">Reset</button>
+  </div>
+</body>
+
+<!-- All js scriptfiles here -->
+<script src="CardScriptV3.js"></script>
+
+</html>

@@ -1,0 +1,85 @@
+body{
+  background-color: black;
+}
+
+.top{
+  background-color: darkgreen;
+  border: 3px solid orange;
+  margin: 5px 0;
+  padding-left: 10px;
+}
+
+.kaart{
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid white;
+  background-color: white;
+  width: 100px;
+  height: 150px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.rij{
+  border: 1px solid black;
+}
+
+.speelveld{
+  display: inline-block;
+  border: 1px solid white;
+  width: 390px;
+  height: 534px;
+}
+
+.stats{
+  border: 3px solid orange;
+  background-color: lime;
+  padding: 5px;
+  font-size: 24px;
+  vertical-align: top;
+  margin-bottom: 5px;
+}
+
+.contain{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.potion{
+  background-color: red;
+  border: 3px inset indigo;
+}
+
+.monster{
+  background-color: purple;
+  border: 3px inset red;
+}
+
+.kaart:hover{
+  opacity: 0.6;
+  transition: all 0.3s ease-out;
+}
+
+.losingMessage{
+  margin-left: 20px;
+}
+
+.versionBtn{
+  background-color: green;
+  border: 3px solid darkgreen;
+  color: black;
+  font-size: 22px;
+  display: block;
+}
+
+.versionBtn:hover{
+  background-color: darkgreen;
+  border-color: green;
+  color: white;
+  transition: all 0.2s ease-out;
+}
+
+.white{
+  color: white;
+}

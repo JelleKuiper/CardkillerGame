@@ -1,0 +1,228 @@
+/* Styling voor alle divs enzo */
+body{
+  background: url("../Photos/MenuBackground.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: black;
+
+  font-family: arial;
+  color: white;
+}
+
+.container{
+  /* border: 1px solid white; */
+  text-align: center;
+  margin: auto;
+  vertical-align: top;
+}
+
+.big{
+  height: 850px;
+  margin-top: 50px;
+  width: 75%;
+}
+
+.medium{
+  height: 670px;
+  width: 90%;
+}
+
+.small{
+  height: 365px;
+  display: inline-block;
+  width: 30%;
+  margin-top: 20px;
+  text-align: center;
+  border: 3px solid gray;
+  border-radius: 16px;
+}
+
+.nav{
+  height: 100px;
+  width: 90%;
+  margin-top: 20px;
+  border: 3px solid gray;
+  border-radius: 16px;
+}
+
+.left{
+  margin-right: 50px;
+}
+
+.right{
+  margin-left: 50px;
+}
+
+.title{
+  font-size: 50px;;
+}
+
+.minus-margin{
+  margin-top: -20px;
+}
+
+@media (max-width: 992px){
+  .big{
+    width: 90%;
+  }
+  .small{
+    width: 40%;
+  }
+  .left{
+    margin-right: 10px;
+  }
+  .right{
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 992px){
+  .big{
+    height: 860px;
+  }
+}
+
+/* Titel animatie styling */
+.black2white{
+  animation: color-change 2s infinite;
+  color: black;
+}
+
+@keyframes color-change {
+  0%{color: black;}
+  50%{color: white;}
+  100%{color: black;}
+}
+
+.white2black{
+  animation: color-change2 2s infinite;
+  color: white;
+}
+
+@keyframes color-change2 {
+  0%{color: white;}
+  50%{color: black;}
+  100%{color: white;}
+}
+
+/* buttons */
+.btn{
+  cursor: pointer;
+  font-size: 22px;
+  background-color: gray;
+  border: 3px solid black;
+  color: black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 8px;
+}
+
+.btn:hover{
+  background-color: black;
+  border-color: gray;
+  color: white;
+  transition: all 0.2s ease-out;
+}
+
+.navBtn{
+  font-size: 26px;
+  margin: 20px 11px 0 11px;
+  width: 25%;
+  padding: 10px 0;
+}
+
+.versionBtn{
+  font-size: 26px;
+  margin: 20px 11px 0 11px;
+  width: 94%;
+  padding: 10px 0;
+}
+
+.goToBtn{
+  display: block;
+  margin: 30px auto 0 auto;
+  width: 75%;
+  padding: 10px 0;
+}
+
+.displayNone{
+  display: none;
+}
+
+@media (max-width: 768px){
+  .navBtn{
+    margin: 25px 5px 0 5px;
+    font-size: 22px;
+  }
+
+  .goToBtn{
+    font-size: 18px;
+    margin: 35px auto 0 auto;
+  }
+
+  .botDiv{
+    margin: 25px 5px 0 5px;
+    font-size: 18px;
+  }
+
+  .big{
+    height: 850px;
+  }
+}
+
+/* Slider */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: gray;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #383838;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #383838;
+  cursor: pointer;
+}
+
+/* Bottom div */
+.botDiv{
+  display: inline-block;
+  width: 40%;
+  margin: 25px 10px 0 10px;
+}
+
+@media (max-width: 540px){
+  .botDiv{
+    margin: 15px 10px 0 10px;
+  }
+}
+
+/* other */
+.margin-plus{
+  margin-top: 100px;
+}
+
+.txtStyling{
+  color: black;
+  font-size: 18px;
+  padding: 0 10px;
+}

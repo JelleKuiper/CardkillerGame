@@ -1,0 +1,105 @@
+/* Voor alles */
+body{
+  background-color: black;
+  font-family: arial;
+}
+
+
+
+/* Voor de top div (header)*/
+.top{
+  background-color: darkgreen;
+  border: 3px solid orange;
+  margin: 5px 0;
+  padding-left: 10px;
+}
+
+.white{
+  color: white;
+}
+
+
+
+/* Voor het speelveld en alles daar in. */
+.speelveld{
+  display: inline-block;
+  border: 1px solid white;
+  width: 380px;
+  height: 530px;
+}
+
+.rij{
+  border: 1px solid white;
+}
+
+.kaart{
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid white;
+  background-color: white;
+  width: 100px;
+  height: 150px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.kaart:hover{
+  opacity: 0.6;
+  transition: all 0.3s ease-out;
+}
+
+.Potion{
+  background-color: red;
+  border: 3px inset indigo;
+}
+
+.Monster{
+  background-color: purple;
+  border: 3px inset red;
+}
+
+
+
+/* Waar alle stats enzo zijn. */
+.contain{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.stats{
+  border: 3px solid orange;
+  vertical-align: top;
+  background-color: lime;
+  padding: 5px;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.versionBtn{
+  display: block;
+  margin-bottom: 5px;
+  background-color: green;
+  border: 3px solid darkgreen;
+  color: black;
+  font-size: 22px;
+}
+
+.versionBtn:hover{
+  background-color: darkgreen;
+  border-color: green;
+  color: white;
+  transition: all 0.2s ease-out;
+}
+
+.btns{
+  margin-top: 25px;
+}
+
+
+
+/* Overig */
+.winLoseMessage{
+  margin-left: 20px;
+  color: white;
+}

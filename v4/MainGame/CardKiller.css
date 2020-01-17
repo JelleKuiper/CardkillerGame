@@ -1,0 +1,209 @@
+/* Voor alles */
+body{
+  background-color: black;
+  font-family: arial;
+}
+
+
+
+/* Voor de top div (header)*/
+.top{
+  background-color: darkgreen;
+  border: 3px solid lime;
+  margin: 5px 0;
+  padding-left: 10px;
+}
+
+.vColor{
+  color: white;
+}
+
+
+
+/* Voor het speelveld en alles daar in. */
+.speelveld{
+  display: inline-block;
+  border: 1px solid white;
+  width: 380px;
+  height: 530px;
+  /* overflow: hidden; */
+}
+
+.kaart{
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid white;
+  background-color: white;
+  width: 100px;
+  height: 150px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.kaart:hover{
+  opacity: 0.6;
+  transition: all 0.3s ease-out;
+}
+
+.monster{
+  background-color: purple;
+  border: 3px inset red;
+  color: red;
+}
+
+.potion{
+  background-color: red;
+  border: 3px inset indigo;
+  color: purple;
+}
+
+.coin{
+  background-color: #F7B006; /* Yellow-goldish */
+  border: 3px inset #7E6A38; /* Brownish */
+  color: #7E6A38; /* Brownish */
+}
+
+.cardValue, .cardCategory{
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+}
+
+.cardValue{
+  margin: 0 0 0 0;
+  font-size: 28px;
+}
+
+.monsterPic{
+  height: 77px;
+  opacity: 0.9;
+  margin: 6px 0;
+}
+
+.potionPic{
+  height: 79px;
+  opacity: 0.9;
+  margin: 5px 0 5px 22px;
+}
+
+.coinPic{
+  height: 79px;
+  margin: 5px 0 5px 19px;
+  opacity: 0.9;
+}
+
+.cardCategory{
+  margin: 0 0 0 0;
+}
+
+
+
+/* Waar alle stats enzo zijn. */
+.contain{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.stats{
+  vertical-align: top;
+  background-color: lime;
+  padding: 5px;
+  font-size: 24px;
+  margin-bottom: 5px;
+  line-height: 35px;
+}
+
+.statSprite{
+  height: 25px;
+  margin: auto 2px -5px auto;
+}
+
+.statMarginFix{
+  margin: auto 5px -5px 4px;
+}
+
+.pakTekst{
+  display: block;
+}
+
+.btnSprite{
+  height: 20px;
+  margin: 0px 0px -3px 2px;
+}
+
+
+
+/* Buttons */
+.btn{
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.navBtn{
+  background-color: darkgreen;
+  border: 3px solid #00CC00;
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.navBtn:hover{
+  background-color: green;
+  border-color: lime;
+  color: white;
+  transition: all 0.2s ease-out;
+}
+
+.gameBtn{
+  background-color: lightblue;
+  border: 3px solid blue;
+  color: black;
+}
+
+.gameBtn:hover{
+  background-color: blue;
+  border: 3px solid lightblue;
+  color: white;
+  transition: all 0.2s ease-out;
+}
+
+.gameBtnExtra{
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+
+/* Titel animatie styling */
+.black2white{
+  animation: color-change 2s infinite;
+  color: black;
+}
+
+@keyframes color-change {
+  0%{color: black;}
+  50%{color: white;}
+  100%{color: black;}
+}
+
+.white2black{
+  animation: color-change2 2s infinite;
+  color: white;
+}
+
+@keyframes color-change2 {
+  0%{color: white;}
+  50%{color: black;}
+  100%{color: white;}
+}
+
+
+
+/* Overig */
+.winLoseMessage{
+  margin-left: 20px;
+  color: white;
+}

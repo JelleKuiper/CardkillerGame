@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="CardCss.css">
+</head>
+
+<body>
+  <div class="top">
+    <h1>Cardkiller <span class= white>V1</span></h1>
+    <h3>Kan jij alle kaarten wegspelen zonder dood te gaan?</h3>
+  </div>
+
+  <div class="speelveld" id="speelveld">
+    <div class="rij">
+      <div class="kaart" onclick="removeCard(this);" id="linksBoven">1</div>
+      <div class="kaart" onclick="removeCard(this);" id="midBoven">2</div>
+      <div class="kaart" onclick="removeCard(this);" id="rechtsBoven">3</div>
+    </div>
+    <div class="rij">
+      <div class="kaart" onclick="removeCard(this);" id="linksMid">4</div>
+      <div class="kaart" onclick="removeCard(this);" id="midMid">5</div>
+      <div class="kaart" onclick="removeCard(this);" id="rechtsMid">6</div>
+    </div>
+    <div class="rij">
+      <div class="kaart" onclick="removeCard(this);" id="linksOnder">7</div>
+      <div class="kaart" onclick="removeCard(this);" id="midOnder">8</div>
+      <div class="kaart" onclick="removeCard(this);" id="rechtsOnder">9</div>
+    </div>
+  </div>
+
+  <div class="contain">
+    <div class="stats" id="stats"></div>
+    <button onclick="window.location.href='../v2/IndexV2.html'" class="versionBtn">To Cardkiller V2</button>
+    <button onclick="window.location.href='../v3/IndexV3.html'" class="versionBtn">To Cardkiller V3</button>
+    <button onclick="window.location.href='../v4/Menu/Menu.html'" class="versionBtn">To Cardkiller Menu</button>
+  </div>
+</body>
+
+<script src="CardScript.js"></script>
+
+</html>
